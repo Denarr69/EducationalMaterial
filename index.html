@@ -1,0 +1,30 @@
+`<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Material Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AcademiX</h1>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Загрузить материал</h2>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Загрузить</button>
+            
+        </section>
+
+        <section id="materials-section">
+            <h2>Список материалов</h2>
+            <ul id="materials-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

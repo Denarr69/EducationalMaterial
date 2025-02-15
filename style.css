@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Стили для загрузки */
+.upload-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    animation: slideUp 1s ease-out;
+}
+
+/*  кнопка */
+button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+    animation: fadeIn 1.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0px 0px 15px rgba(255, 65, 108, 0.5);
+}
+
+/* инпут файла */
+.file-input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+}
+
+.file-input-wrapper input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.file-input-label {
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.file-input-label:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Список загруженных файлов */
+#materials-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    animation: fadeIn 1.5s;
+}
+
+#materials-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 6px;
+    width: 60%;
+    transition: transform 0.3s;
+}
+
+#materials-list li:hover {
+    transform: translateY(-3px);
+}
+
+#materials-list a {
+    color: #ffcccb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#materials-list a:hover {
+    text-decoration: underline;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
